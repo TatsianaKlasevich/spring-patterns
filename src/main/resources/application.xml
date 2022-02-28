@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+        <property name="scopes">
+            <map>
+                <entry key="myThreadScope">
+                    <bean class="com.klasevich.spring.patterns.scope.MyThreadScope"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <context:annotation-config/>
+    <bean id="myBean" class="com.klasevich.spring.patterns.scope.MyThreadScope"
+          scope="myThreadScope">
+        <property name="name" value="Dinesh"></property>
+    </bean>
+    <bean id="transferService"
+          class="com.klasevich.spring.patterns.di.TransferService"/>
+    <bean id="accountRepository"
+          class="com.klasevich.spring.patterns.di.JdbcAccountRepository"
+          init-method="populateCache"/>
+</beans>
