@@ -1,2 +1,5 @@
 rootProject.name = 'spring-patterns'
+include 'design-patterns'
+include 'springCache'
+include 'spring_aop_orm_transaction_cache'
 
