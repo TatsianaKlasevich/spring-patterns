@@ -20,8 +20,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     @Override
     public List<Employee> getAllEmployees() {
         Session session = sessionFactory.getCurrentSession();
-        List<Employee> allEmployees = session.createQuery("from Employee", Employee.class).getResultList();
-        return allEmployees;
+        return session.createQuery("from Employee", Employee.class).getResultList();
     }
 
     @Override
@@ -34,8 +33,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     @Override
     public Employee getEmployee(int id) {
         Session session = sessionFactory.getCurrentSession();
-        Employee employee = session.get(Employee.class, id);
-        return employee;
+        return session.get(Employee.class, id);
     }
 
     @Override

@@ -5,7 +5,7 @@ import com.klasevich.spring.persistance.entity.Employee;
 import java.util.List;
 
 public interface EmployeeRepository {
-    public List<Employee> getAllEmployees();
+    List<Employee> getAllEmployees();
 
     void saveEmployee(Employee employee);
 
