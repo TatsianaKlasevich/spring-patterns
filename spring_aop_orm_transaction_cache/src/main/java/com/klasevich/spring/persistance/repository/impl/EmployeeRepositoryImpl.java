@@ -7,8 +7,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
@@ -17,6 +17,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     @Autowired
     private SessionFactory sessionFactory;
 
+    @Transactional(readOnly = true)
     @Override
     public List<Employee> getAllEmployees() {
         Session session = sessionFactory.getCurrentSession();

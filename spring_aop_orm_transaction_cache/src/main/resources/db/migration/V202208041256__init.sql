@@ -1,5 +1,3 @@
-CREATE SCHEMA IF NOT EXISTS employees_database;
-
 CREATE TABLE IF NOT EXISTS employees
 (
     id         BIGINT AUTO_INCREMENT NOT NULL,

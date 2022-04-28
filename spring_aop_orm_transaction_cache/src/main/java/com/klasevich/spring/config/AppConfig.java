@@ -81,7 +81,6 @@ public class AppConfig {
         properties.setProperty(Environment.DIALECT, dialect);
         properties.setProperty("format_sql", "true");
         properties.setProperty("show_sql", "true");
-        properties.setProperty("hibernate.default_schema", "employees_database");
         properties.setProperty(Environment.SHOW_SQL, showSql);
         properties.setProperty(Environment.FORMAT_SQL, formatSql);
 
