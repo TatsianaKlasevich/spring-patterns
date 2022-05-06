@@ -50,7 +50,6 @@ public class AppConfig {
         return Flyway.configure()
                 .dataSource(url, user, password)
                 .locations(migrationLocation)
-//                .schemas(schema)
                 .load();
     }
 

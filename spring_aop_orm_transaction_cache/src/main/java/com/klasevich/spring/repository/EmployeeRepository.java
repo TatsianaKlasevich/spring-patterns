@@ -1,6 +1,6 @@
-package com.klasevich.spring.persistance.repository;
+package com.klasevich.spring.repository;
 
-import com.klasevich.spring.persistance.entity.Employee;
+import com.klasevich.spring.model.Employee;
 
 import java.util.List;
 

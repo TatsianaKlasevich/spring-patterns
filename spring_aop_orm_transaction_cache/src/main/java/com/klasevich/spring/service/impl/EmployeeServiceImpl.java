@@ -1,7 +1,7 @@
 package com.klasevich.spring.service.impl;
 
-import com.klasevich.spring.persistance.entity.Employee;
-import com.klasevich.spring.persistance.repository.EmployeeRepository;
+import com.klasevich.spring.model.Employee;
+import com.klasevich.spring.repository.EmployeeRepository;
 import com.klasevich.spring.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

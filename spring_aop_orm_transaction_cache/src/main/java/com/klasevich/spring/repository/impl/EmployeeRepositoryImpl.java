@@ -1,7 +1,7 @@
-package com.klasevich.spring.persistance.repository.impl;
+package com.klasevich.spring.repository.impl;
 
-import com.klasevich.spring.persistance.entity.Employee;
-import com.klasevich.spring.persistance.repository.EmployeeRepository;
+import com.klasevich.spring.model.Employee;
+import com.klasevich.spring.repository.EmployeeRepository;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;

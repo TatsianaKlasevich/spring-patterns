@@ -1,7 +1,7 @@
 package com.klasevich.spring;
 
 import com.klasevich.spring.config.AppConfig;
-import com.klasevich.spring.persistance.repository.EmployeeRepository;
+import com.klasevich.spring.repository.EmployeeRepository;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
