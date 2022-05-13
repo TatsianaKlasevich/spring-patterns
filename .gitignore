@@ -7,3 +7,5 @@
 /gradlew.bat
 /spring_aop_orm_transaction_cache/build/
 /design-patterns/build/
+/.idea/
+

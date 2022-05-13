@@ -9,7 +9,7 @@ public interface EmployeeRepository {
 
     void saveEmployee(Employee employee);
 
-    Employee getEmployee(int id);
+    Employee getEmployee(Long id);
 
-    void deleteEmployee(int id);
+    void deleteEmployee(Long id);
 }

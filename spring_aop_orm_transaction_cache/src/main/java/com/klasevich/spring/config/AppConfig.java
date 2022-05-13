@@ -13,6 +13,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
@@ -22,6 +23,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @PropertySource("classpath:/application.properties")
 @ComponentScan(basePackages = {"com.klasevich.spring"})
+@EnableWebMvc
 public class AppConfig {
 
     @Value("${database.driver}")
